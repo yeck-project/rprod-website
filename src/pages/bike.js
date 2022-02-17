@@ -1,16 +1,18 @@
 import React from "react";
-import Container from "../components/container";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
+import BikeHeader from "../components/bikeHeader";
+import BikeBrands from "../components/bikeBrands";
+import BikeProducts from "../components/bikeProducts";
 
 export default function Index({ data: { allPosts, site, blog } }) {
-  const heroPost = allPosts.nodes[0];
-  const morePosts = allPosts.nodes.slice(1);
 
   return (
-    <Container>
-      <p>test</p>
-    </Container>
+  <>
+  <BikeHeader/>
+  <BikeBrands/>
+  <BikeProducts/>
+  </>
   );
 }
 
