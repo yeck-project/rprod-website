@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'gatsby'
 
 export default function OneProduct() {
+  const image = "https://thumbnails.mtb-news.de/cache/1200_640_1_1_0/5f/aHR0cHM6Ly93d3cubXRiLW5ld3MuZGUvbmV3cy93cC1jb250ZW50L3VwbG9hZHMvMjAxOS8wNS9hcmM4LXRpdGVsLTk1NDMtMS5qcGc.jpg"
   return (
     <section class="py-20 bg-gray-100 overflow-x-hidden">
     <div class="container mx-auto px-4">
@@ -9,8 +10,7 @@ export default function OneProduct() {
       <div class="max-w-5xl mx-auto">
         <div class="flex flex-wrap -m-10">
           <div class="w-full lg:w-2/3 p-10">
-            <div class="relative pt-16 px-6 lg:px-24 bg-black pb-20 min-h-full">
-            </div>
+            <div class="relative pt-16 px-6 lg:px-24 bg-black pb-20 min-h-full" style={{backgroundImage: `url(${image})`}}></div>
           </div>
           <div class="w-full lg:w-1/3 p-10">
             <div class="relative px-10 py-12 bg-gray-600 h-full">
