@@ -10,6 +10,8 @@ export default function Index({ data: { allPosts, site, blog } }) {
   <>
   <ProductPageHeader/>
   <OneProduct/>
+  <OneProduct/>
+  <OneProduct/>
   </>
   );
 }

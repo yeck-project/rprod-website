@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../components/container";
+import HomepageContent from "../components/homepageContent";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
 
@@ -8,9 +9,14 @@ export default function Index({ data: { allPosts, site, blog } }) {
   const morePosts = allPosts.nodes.slice(1);
 
   return (
-    <Container>
-      <p>test</p>
-    </Container>
+  <section class="flex flex-col sm:flex-row h-screen sm:h-screen">
+    <div class="w-full sm:w-1/2 h-1/2 sm:h-full">
+      <HomepageContent/>
+    </div>
+    <div class="w-full sm:w-1/2 h-1/2 sm:h-full">
+      <HomepageContent/>
+    </div>
+  </section>
   );
 }
 
