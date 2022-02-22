@@ -6,9 +6,9 @@ export default function ProductPageHeader() {
   const logo = 'https://res.cloudinary.com/ridefolks/image/upload/v1642532967/Fichier_3_pxxic0.png'
   const titre = "Tout pour le vélo";
   return (
-    <div style={{backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'bottom'}} class="flex flex-col text-center items-center justify-center w-full h-full">
-      <a href="/" class="">
-        <img src={logo} class="w-4/5 m-auto transform transition duration-500 hover:scale-125"/>
+    <div style={{backgroundImage: `url(${image})`}} class="flex flex-col text-center items-center justify-center w-full h-full bg-cover bg-center bg-no-repeat">
+      <a href="/bike" class="">
+        <img src={logo} class="w-4/5 m-auto transform transition duration-500 hover:scale-110"/>
       </a> 
       <h2 class="text-xl text-gray-100 mt-5 w-3/4">{titre}</h2> 
     </div> 
