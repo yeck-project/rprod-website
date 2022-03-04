@@ -4,9 +4,7 @@ import HomepageContent from "../components/homepageContent";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
 
-export default function Index({ data: { allPosts, site, blog } }) {
-  const heroPost = allPosts.nodes[0];
-  const morePosts = allPosts.nodes.slice(1);
+export default function Index() {
 
   return (
   <section class="flex flex-col sm:flex-row h-screen sm:h-screen">
@@ -19,7 +17,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
   </section>
   );
 }
-
+/*
 export const query = graphql`
   {
     site: datoCmsSite {
@@ -56,4 +54,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`;*/

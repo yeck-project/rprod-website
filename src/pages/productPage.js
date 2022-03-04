@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import ProductPageHeader from "../components/productPageHeader";
 import OneProduct from "../components/oneProduct";
 
-export default function Index({ data: { allPosts, site, blog } }) {
+export default function Index() {
 
   return (
   <>
@@ -15,7 +15,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
   </>
   );
 }
-
+/*
 export const query = graphql`
   {
     site: datoCmsSite {
@@ -52,4 +52,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`;*/

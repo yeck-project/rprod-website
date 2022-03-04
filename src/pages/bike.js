@@ -5,7 +5,7 @@ import BikeHeader from "../components/bikeHeader";
 import BikeBrands from "../components/bikeBrands";
 import BikeProducts from "../components/bikeProducts";
 
-export default function Index({ data: { allPosts, site, blog } }) {
+export default function Index() {
 
   return (
   <>
@@ -15,7 +15,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
   </>
   );
 }
-
+/*
 export const query = graphql`
   {
     site: datoCmsSite {
@@ -52,4 +52,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`;*/
