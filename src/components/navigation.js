@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Link } from 'gatsby'
-
 
 export function NavbarMobile () {
   const [open, SetOpen] = useState(true);

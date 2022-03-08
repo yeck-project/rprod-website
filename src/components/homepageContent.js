@@ -6,11 +6,11 @@ export default function ProductPageHeader() {
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png'
   const titre = "Tout pour le vélo";
   return (
-    <div style={{backgroundImage: `url(${image})`}} class="flex flex-col text-center items-center justify-center w-full h-full bg-cover bg-center bg-no-repeat">
-      <a href="/bike" class="">
-        <img src={logo} class="w-4/5 m-auto transform transition duration-500 hover:scale-110"/>
-      </a> 
-      <h2 class="text-xl text-gray-100 mt-5 w-3/4">{titre}</h2> 
-    </div> 
+    <>
+    <a href="/bike" class="hover:scale-125 relative flex items-center justify-center overflow-hidden shadow-xl w-full h-full">
+      <div style={{backgroundImage: `url(${image})`}} class="hover:scale-125 absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover"/>
+      <img src={logo} class="absolute w-4/6 transition-all duration-500 ease-in-out transform opacity-80 hover:scale-100"/>
+    </a>
+    </> 
   )
 }
