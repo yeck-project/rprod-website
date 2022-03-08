@@ -38,8 +38,8 @@ export function NavbarMobile () {
             </span> 
           </button>
           <div class="mt-20 text-black">
-            <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
-            <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
+            <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">About</a>
+            <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Visiter Page Media</a>
             <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
             <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
           </div>
@@ -67,11 +67,9 @@ export function NavbarDesktop () {
       <nav class="relative px-6 py-2 flex justify-between items-center bg-white">
         <a href="#" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
         <ul class="flex mx-auto flex items-center w-auto space-x-6">
-          <li><a href="#" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Home</a></li>
-          <li><a href="#" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Home</a></li>
-          <li><a href="#" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Home</a></li>
-          <li><a href="#" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Home</a></li>
-          <li><a href="#" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Home</a></li>
+          <li><a href="/bike" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Les produits</a></li>
+          <li><a href="/about" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">About</a></li>
+          <li><a href="/media" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Rprod Media</a></li>
         </ul>
         <a class="text-white bg-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-white hover:border-black hover:text-black" href="#">Contact</a>
       </nav>

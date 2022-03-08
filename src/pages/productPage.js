@@ -3,7 +3,7 @@ import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
 import ProductPageHeader from "../components/productPageHeader";
 import OneProduct from "../components/oneProduct";
-import Navbar from "../components/navigation";
+import Navbar from "../components/navigationBike";
 
 export default function Index() {
 
