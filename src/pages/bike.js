@@ -4,11 +4,13 @@ import { graphql } from "gatsby";
 import BikeHeader from "../components/bikeHeader";
 import BikeBrands from "../components/bikeBrands";
 import BikeProducts from "../components/bikeProducts";
+import Navigation from "../components/navigation";
 
 export default function Index() {
 
   return (
   <>
+  <Navigation/>
   <BikeHeader/>
   <BikeBrands/>
   <BikeProducts/>
