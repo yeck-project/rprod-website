@@ -4,7 +4,8 @@ import { graphql } from "gatsby";
 import BikeHeader from "../components/bikeHeader";
 import BikeBrands from "../components/bikeBrands";
 import BikeProducts from "../components/bikeProducts";
-import Navigation from "../components/navigation";
+import Navigation from "../components/navigationBike";
+import Contact from "../components/contact";
 
 export default function Index() {
 
@@ -14,6 +15,7 @@ export default function Index() {
   <BikeHeader/>
   <BikeBrands/>
   <BikeProducts/>
+  <Contact/>
   </>
   );
 }

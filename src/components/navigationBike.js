@@ -6,7 +6,12 @@ export function NavbarMobile () {
   
   function toggle() {
     SetOpen(!open);
-  }
+  };
+
+  const handleClickContact = () => {
+    var elementContact = document.getElementById("contact");
+    elementContact.scrollIntoView({ behavior: 'smooth', block: 'start'});
+  };
   
   return (
     <>
@@ -37,11 +42,11 @@ export function NavbarMobile () {
               <span class="hamburger-inner"></span>
             </span> 
           </button>
-          <div class="mt-20 text-black">
-            <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">About</a>
-            <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Visiter Page Media</a>
-            <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
-            <a href="#" class="text-center text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
+          <div class="mt-20 text-black text-center">
+            <a href="#" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">About</a>
+            <a href="#" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Visiter Page Media</a>
+            <a href="#" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
+            <a href="#" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
           </div>
           <div class="flex justify-center mt-10">
             <a class="mr-3" href="#">
@@ -60,6 +65,11 @@ export function NavbarMobile () {
 
 export function NavbarDesktop () { 
   
+  const handleClickContact = () => {
+    var elementContact = document.getElementById("contact");
+    elementContact.scrollIntoView({ behavior: 'smooth', block: 'start'});
+  };
+
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
   
   return (
@@ -71,7 +81,7 @@ export function NavbarDesktop () {
           <li><a href="/about" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">About</a></li>
           <li><a href="/media" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Rprod Media</a></li>
         </ul>
-        <a class="text-white bg-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-white hover:border-black hover:text-black" href="#">Contact</a>
+        <a onClick={handleClickContact} class="text-white bg-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-white hover:border-black hover:text-black">Contact</a>
       </nav>
     </>
   );

@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import ProductPageHeader from "../components/productPageHeader";
 import OneProduct from "../components/oneProduct";
 import Navbar from "../components/navigationBike";
+import Contact from "../components/contact";
 
 export default function Index() {
 
@@ -18,6 +19,7 @@ export default function Index() {
       <OneProduct/>
     </div>
   </div>
+  <Contact/>
   </>
   );
 }
