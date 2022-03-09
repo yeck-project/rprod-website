@@ -11,7 +11,7 @@ export function NavbarMobile ({ menuItems, logo }) {
     <>
     <div class="relative">
       <div class="bg-white text-black flex justify-between">
-        <a href="/" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
+        <a href="/index" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
         <button onClick={toggle} type="button"
           className={open ? 
             'hamburger hamburger--collapse outline-none' : 
