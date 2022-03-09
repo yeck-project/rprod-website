@@ -1,23 +1,17 @@
 import React, { useState } from "react";
 
-export function NavbarMobile () {
+export function NavbarMobile ({ menuItems, logo }) {
   const [open, SetOpen] = useState(true);
-  const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
   
   function toggle() {
     SetOpen(!open);
   };
 
-  const handleClickContact = () => {
-    var elementContact = document.getElementById("contact");
-    elementContact.scrollIntoView({ behavior: 'smooth', block: 'start'});
-  };
-  
   return (
     <>
     <div class="relative">
       <div class="bg-white text-black flex justify-between">
-        <a href="#" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
+        <a href="/" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
         <button onClick={toggle} type="button"
           className={open ? 
             'hamburger hamburger--collapse outline-none' : 
@@ -43,10 +37,11 @@ export function NavbarMobile () {
             </span> 
           </button>
           <div class="mt-20 text-black text-center">
-            <a href="#" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">About</a>
-            <a href="#" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Visiter Page Media</a>
-            <a href="#" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
-            <a href="#" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Home</a>
+            {menuItems.map((menuItem)=>{
+            return (
+              <a href={`/${menuItem.toLowerCase()}`} class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">{menuItem}</a>
+            )
+            })}
           </div>
           <div class="flex justify-center mt-10">
             <a class="mr-3" href="#">
@@ -63,23 +58,23 @@ export function NavbarMobile () {
   );
 };
 
-export function NavbarDesktop () { 
+export function NavbarDesktop ({ menuItems, logo }) { 
   
   const handleClickContact = () => {
     var elementContact = document.getElementById("contact");
     elementContact.scrollIntoView({ behavior: 'smooth', block: 'start'});
   };
 
-  const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
-  
   return (
     <>
       <nav class="relative px-6 py-2 flex justify-between items-center bg-white">
         <a href="#" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
         <ul class="flex mx-auto flex items-center w-auto space-x-6">
-          <li><a href="/bike" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Les produits</a></li>
-          <li><a href="/about" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">About</a></li>
-          <li><a href="/media" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Rprod Media</a></li>
+        {menuItems.map((menuItem)=>{
+          return (
+            <li><a href={`/${menuItem.toLowerCase()}`} class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">{menuItem}</a></li>
+          )
+          })}
         </ul>
         <a onClick={handleClickContact} class="text-white bg-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-white hover:border-black hover:text-black">Contact</a>
       </nav>
@@ -87,15 +82,21 @@ export function NavbarDesktop () {
   );
 };
 
-export default function Navbar () { 
+export default function Navbar ({ menuItems, logo }) { 
   
   return (
     <>
     <div class="md:hidden">
-      <NavbarMobile/>
+      <NavbarMobile
+        menuItems={menuItems}
+        logo={logo}
+      />
     </div>
     <div class="hidden md:block">
-      <NavbarDesktop/>
+      <NavbarDesktop
+        menuItems={menuItems}
+        logo={logo}
+      />
     </div>
     </>
   );

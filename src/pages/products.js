@@ -3,16 +3,15 @@ import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
 import ProductPageHeader from "../components/productPageHeader";
 import OneProduct from "../components/oneProduct";
-import Navbar from "../components/navigationBike";
+import Navbar from "../components/navigation";
 import Contact from "../components/contact";
 
 export default function Index() {
 
   return (
   <>
-  <Navbar/>
   <ProductPageHeader/>
-  <div class="container mx-auto px-4">
+  <div class="relative container px-4 mx-auto">
     <div class="flex flex-wrap -mx-3 mb-20">
       <OneProduct/>
       <OneProduct/>

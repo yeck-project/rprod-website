@@ -6,9 +6,8 @@ export default function Contact() {
     <section id="contact">
     <div class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
-        <div class="mb-16 max-w-md mx-auto text-center">
-          <h2 class="text-4xl lg:text-5xl font-bold font-heading">Contact</h2>
-          <p class="text-gray-500">Got any question? Let’s talk about it.</p>
+        <div class="mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold font-heading">Prenez Contact</h2>
         </div>
         <div class="flex flex-wrap -mx-4">
           <div class="mb-8 lg:mb-0 w-full lg:w-1/3 px-4">
