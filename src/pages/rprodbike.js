@@ -12,6 +12,7 @@ export default function Bike() {
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
   return (
   <>
+  <div class="overflow-x-hidden">
   <Navigation
     menuItems={menuArray}
     logo={logo}
@@ -43,6 +44,7 @@ export default function Bike() {
     productLink4={"/bike"}
   />
   <Contact/>
+  </div>
   </>
   );
 }

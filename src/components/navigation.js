@@ -13,7 +13,7 @@ export function NavbarMobile ({ menuItems, logo }) {
       <div class="bg-white text-black flex justify-between">
         <a href="/index" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
         <button onClick={toggle} type="button"
-          className={open ? 
+          className={open ?
             'hamburger hamburger--collapse outline-none' : 
             'hamburger hamburger--collapse outline-none is-active'}
             >
@@ -24,7 +24,7 @@ export function NavbarMobile ({ menuItems, logo }) {
       </div>
       <div className={open ? 
       'bg-white min-h-screen z-10 w-4/6 space-y-6 py-7 px-2 absolute inset-y-0 right-0 transform translate-x-full transition duration-500 ease-in-out origin-right' : 
-      'bg-white min-h-screen z-10 w-4/6 space-y-6 py-7 px-2 absolute inset-y-0 right-0 transform md:relative transition duration-500 ease-in-out origin-right'}
+      'bg-white min-h-screen z-10 w-4/6 space-y-6 py-7 px-2 absolute inset-y-0 right-0 transform transition duration-500 ease-in-out origin-right'}
       >
         <nav>
           <button onClick={toggle} type="button"
