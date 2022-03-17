@@ -4018,22 +4018,29 @@ datocms-contentful-to-structured-text@^1.1.3:
     "@contentful/rich-text-types" "^14.1.2"
     datocms-structured-text-utils "^1.2.0"
 
-datocms-listen@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/datocms-listen/-/datocms-listen-0.1.6.tgz#529b6f552815562695e32375ec82bd3af19b8558"
-  integrity sha512-B3lJqobSV4fzkY7CYgYMcK0k2Hvy7/8g+LLnxiQ9Fgm+ETsQbRjHvF2neEX6kDWXNiP6pn0Fq5lkxyeGFjXU7w==
+datocms-listen@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/datocms-listen/-/datocms-listen-0.1.7.tgz#58f90ee2668b6a9480c47d79e91c5ca5993ab8ce"
+  integrity sha512-v0k6IStA6uCQa1rk03tVv2CfxUqDLa/ECN9hnYYGgV1BtZEj/HTbxvdsi/cCDPCi4iFQGY8xjqplnSgTXIA9tA==
 
-datocms-structured-text-generic-html-renderer@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/datocms-structured-text-generic-html-renderer/-/datocms-structured-text-generic-html-renderer-1.2.0.tgz#b1d1139b2fd6d7f3541aec497a8be35d91f85a3b"
-  integrity sha512-77w/bfO0GE43ck4ClhkeNs7vG3zmsgo1uyBLEomeALtfj0rlbCWS5jI33svMl3ek1BbBukTVdqLaliyrxCwpWg==
+datocms-structured-text-generic-html-renderer@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/datocms-structured-text-generic-html-renderer/-/datocms-structured-text-generic-html-renderer-2.0.1.tgz#83bbf0d58b740f2ce53562c05310ff76c9a0c9b1"
+  integrity sha512-TXwtMYIG6/bcAX4mEaOj73bvUhibeeqWHCa6FAYeAgFCcrqnyVeain1yck5r+QDMu1pHzp/5M4Ua40DyjyHl7w==
   dependencies:
-    datocms-structured-text-utils "^1.2.0"
+    datocms-structured-text-utils "^2.0.1"
 
-datocms-structured-text-utils@^1.0.13, datocms-structured-text-utils@^1.0.15, datocms-structured-text-utils@^1.1.0, datocms-structured-text-utils@^1.2.0:
+datocms-structured-text-utils@^1.0.13, datocms-structured-text-utils@^1.0.15, datocms-structured-text-utils@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/datocms-structured-text-utils/-/datocms-structured-text-utils-1.2.0.tgz#ccbeb06c97f9d0f282750093fc1be0f2e2b0269c"
   integrity sha512-8qfpSWU/nVrMr8C0aT5n16WN0/KQbtYD2GJXd9WDf01bfr+WzJCi5szZF1dBLhD2zhs41A4gtO3aM4J1CQe4wA==
+  dependencies:
+    array-flatten "^3.0.0"
+
+datocms-structured-text-utils@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/datocms-structured-text-utils/-/datocms-structured-text-utils-2.0.1.tgz#4afaee56f2525bfb4db6d11f747f66b1c211958a"
+  integrity sha512-5Y3K76SXgqZRF9lztPmI/MytyHDhs+ib1do6cXM5My0wfOkJmtzN6QR/smKjDY+Clt0XRik5Tv88XwHc/fvKAg==
   dependencies:
     array-flatten "^3.0.0"
 
@@ -6757,11 +6764,6 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
-
-intersection-observer@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.12.0.tgz#6c84628f67ce8698e5f9ccf857d97718745837aa"
-  integrity sha512-2Vkz8z46Dv401zTWudDGwO7KiGHNDkMv417T5ItcNYfmvHR/1qCTVBO9vwH8zZmQ0WkA/1ARwpysR9bsnop4NQ==
 
 invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
@@ -10031,16 +10033,16 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-datocms@^1.6.3:
-  version "1.6.6"
-  resolved "https://registry.yarnpkg.com/react-datocms/-/react-datocms-1.6.6.tgz#c3c4a14e8369ff4355612160325efc184299075f"
-  integrity sha512-7k8HziRVkTLGz5MM+MmdO815rSEUJb1xPv0dNRJoCJBh+UDkB3hRBCwDZgVPJMK5AH9DSshcu6bN1gAhLpHRtw==
+react-datocms@^3.0.11:
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/react-datocms/-/react-datocms-3.0.11.tgz#fff8b0e1629db47ec64a7371caf83246e33236cb"
+  integrity sha512-W2TZZSJXgqjfoQV94u4/akARW1j1xc5eaJ4758iOGpyqZi+W6dEUblDvBPLPGV8fWkNorYOcCmJ54/GkWTOd5Q==
   dependencies:
-    datocms-listen "^0.1.6"
-    datocms-structured-text-generic-html-renderer "^1.1.0"
-    datocms-structured-text-utils "^1.1.0"
-    intersection-observer "^0.12.0"
-    react-intersection-observer "^8.31.1"
+    datocms-listen "^0.1.7"
+    datocms-structured-text-generic-html-renderer "^2.0.1"
+    datocms-structured-text-utils "^2.0.1"
+    react-intersection-observer "^8.33.1"
+    universal-base64 "^2.1.0"
     use-deep-compare-effect "^1.6.1"
 
 react-dev-utils@^11.0.4:
@@ -10102,10 +10104,10 @@ react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-intersection-observer@^8.31.1:
-  version "8.32.1"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.32.1.tgz#9b949871eb35eb1fc730732bbf8fcfaaaf3f5b02"
-  integrity sha512-FOmMkMw7MeJ8FkuADpU8TRcvGuTvPB+DRkaikS1QXcWArYLCWC3mjRorq2XeRGBuqmaueOBd27PUazTu9AgInw==
+react-intersection-observer@^8.33.1:
+  version "8.33.1"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.33.1.tgz#8e6442cac7052ed63056e191b7539e423e7d5c64"
+  integrity sha512-3v+qaJvp3D1MlGHyM+KISVg/CMhPiOlO6FgPHcluqHkx4YFCLuyXNlQ/LE6UkbODXlQcLOppfX6UMxCEkUhDLw==
 
 react-is@^16.12.0, react-is@^16.8.1:
   version "16.13.1"
@@ -12018,6 +12020,11 @@ unist-util-visit@^4.0.0:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
     unist-util-visit-parents "^5.0.0"
+
+universal-base64@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/universal-base64/-/universal-base64-2.1.0.tgz#511af92b3a07340fc2647036045aadb3bedcc320"
+  integrity sha512-WeOkACVnIXJZr/qlv7++Rl1zuZOHN96v2yS5oleUuv8eJOs5j9M5U3xQEIoWqn1OzIuIcgw0fswxWnUVGDfW6g==
 
 universalify@^2.0.0:
   version "2.0.0"

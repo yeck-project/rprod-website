@@ -14,8 +14,6 @@ export default function Index() {
   <div class="relative container px-4 mx-auto">
     <div class="flex flex-wrap -mx-3 mb-20">
       <OneProduct/>
-      <OneProduct/>
-      <OneProduct/>
     </div>
   </div>
   <Contact/>

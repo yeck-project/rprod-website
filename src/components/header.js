@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 export default function Header({ headerTitle, imageHeader1, imageHeader2 }) {
   return (
-  <section class="relative py-0 md:py-20 bg-black">
+  <section class="relative py-20 md:py-20 bg-black">
     <div class="relative container px-4 mx-auto">
       <div class="flex flex-wrap -mx-4">
         <div class="w-full lg:w-1/3 px-4 mb-20 lg:mb-0">

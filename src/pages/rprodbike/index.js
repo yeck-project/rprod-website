@@ -1,14 +1,14 @@
 import React from "react";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
-import Header from "../components/header";
-import Brands from "../components/brands";
-import ProductTypes from "../components/productTypes";
-import Navigation from "../components/navigation";
-import Contact from "../components/contact";
+import Header from "../../components/header";
+import Brands from "../../components/brands";
+import ProductTypes from "../../components/productTypes";
+import Navigation from "../../components/navigation";
+import Contact from "../../components/contact";
 
 export default function Bike() {
-  const menuArray = ['Sport', 'Produits', 'Entreprise', 'RprodBike'];
+  const menuArray = ['Textiles', 'Protection', 'Nutrition', 'RprodMedia'];
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
   return (
   <>
@@ -18,22 +18,22 @@ export default function Bike() {
       logo={logo}
     />
     <Header
-      imageHeader1={"https://www.exportpaca.com/wp-content/uploads/2020/08/25434-755-austin-distel-wD1LRb9OeEo-unsplash.jpg"}
-      imageHeader2={"https://www.exportpaca.com/wp-content/uploads/2020/08/25434-755-austin-distel-wD1LRb9OeEo-unsplash.jpg"}
+      imageHeader1={"https://thumbnails.mtb-news.de/cache/1200_640_1_1_0/5f/aHR0cHM6Ly93d3cubXRiLW5ld3MuZGUvbmV3cy93cC1jb250ZW50L3VwbG9hZHMvMjAxOS8wNS9hcmM4LXRpdGVsLTk1NDMtMS5qcGc.jpg"}
+      imageHeader2={"https://thumbnails.mtb-news.de/cache/1200_640_1_1_0/5f/aHR0cHM6Ly93d3cubXRiLW5ld3MuZGUvbmV3cy93cC1jb250ZW50L3VwbG9hZHMvMjAxOS8wNS9hcmM4LXRpdGVsLTk1NDMtMS5qcGc.jpg"}
       headerTitle={"Test"}
     />
     <Brands
-      brandsTitle={"Les entreprises avec qui j'ai collaboré"}
+      brandsTitle={"Les marques que je représente"}
       brandImage1={"https://www.supertour.fr/wp-content/uploads/2020/01/logo_bis.png"}
       brandImage2={"https://www.supertour.fr/wp-content/uploads/2020/01/logo_bis.png"}
       brandImage3={"https://www.supertour.fr/wp-content/uploads/2020/01/logo_bis.png"}
     />
     <ProductTypes
       productsTitle={"Les produits que je propose"}
-      productImage1={"https://www.couleursgaia.com/uploads/2021/02/soins-capillaires-bio-couleurs-gaia-768x509.jpg"}
-      productImage2={"https://www.couleursgaia.com/uploads/2021/02/soins-capillaires-bio-couleurs-gaia-768x509.jpg"}
-      productImage3={"https://www.couleursgaia.com/uploads/2021/02/soins-capillaires-bio-couleurs-gaia-768x509.jpg"}
-      productImage4={"https://www.couleursgaia.com/uploads/2021/02/soins-capillaires-bio-couleurs-gaia-768x509.jpg"}
+      productImage1={"https://d3spv9lkjdky95.cloudfront.net/default/media/_/page/mountain-bike-jerseys.jpg"}
+      productImage2={"https://images.singletracks.com/blog/wp-content/uploads/2020/06/DSC3905.jpg"}
+      productImage3={"https://d3spv9lkjdky95.cloudfront.net/default/media/_/page/mountain-bike-jerseys.jpg"}
+      productImage4={"https://d3spv9lkjdky95.cloudfront.net/default/media/_/page/mountain-bike-jerseys.jpg"}
       productTitle1={"Textiles"}
       productTitle2={"Protection"}
       productTitle3={"Nutrition"}
