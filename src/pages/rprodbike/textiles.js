@@ -14,10 +14,10 @@ export default function Textiles({ data: { allTextiles } }) {
         return (
           <OneProduct
           key={key}
-          image={value.image}
-          titre={value.titre}
-          description={value.description}
-          lien={value.lien}
+          image={value?.image}
+          titre={value?.titre}
+          description={value?.description}
+          lien={value?.lien}
           />
         )
       })}
