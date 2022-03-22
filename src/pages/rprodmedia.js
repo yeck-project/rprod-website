@@ -1,6 +1,4 @@
 import React from "react";
-import { HelmetDatoCms } from "gatsby-source-datocms";
-import { graphql } from "gatsby";
 import Header from "../components/header";
 import Brands from "../components/brands";
 import ProductTypes from "../components/productTypes";
