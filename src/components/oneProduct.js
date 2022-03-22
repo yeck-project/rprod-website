@@ -7,7 +7,7 @@ export default function OneProduct({ image, titre, description, lien }) {
     <div class="w-full lg:w-1/3 px-3 mb-6 lg:mb-0">
     <img
       class="object-cover w-full h-96"
-      src={image.url}
+      src={image?.url}
       alt="Photo"
     />
     <h4 class="mt-4 text-xl font-bold text-gray-900">{titre}</h4>
