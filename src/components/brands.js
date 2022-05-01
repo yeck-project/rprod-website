@@ -10,21 +10,13 @@ export function Brand({ brandImage }) {
   )
 };
 
-export default function Brands({ brandsTitle, brandImage1, brandImage2, brandImage3 }) {
+export default function Brands({ brands }) {
+  console.log(brands)
   return (
 <section class="py-20 bg-gray-50 ">
   <div class="container mx-auto px-4">
-    <h2 class="mb-16 md:mb-24 text-4xl md:text-5xl font-bold font-heading">{brandsTitle}</h2>
+    <h2 class="mb-16 md:mb-24 text-4xl md:text-5xl font-bold font-heading">""</h2>
     <div class="flex flex-wrap -mx-4">
-      <Brand
-      brandImage={brandImage1}
-      />
-      <Brand
-      brandImage={brandImage2}
-      />
-      <Brand
-      brandImage={brandImage3}
-      />
     </div>
   </div>
 </section>
