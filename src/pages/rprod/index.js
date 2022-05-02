@@ -7,10 +7,11 @@ import ProductTypes from "../../components/productTypes";
 import Navigation from "../../components/navigation";
 import Contact from "../../components/contact";
 
-export default function Bike({ data: { allRprodGenerals, allMarquesProds, allRprodCategories } }) {
+export default function Prod({ data: { allRprodGenerals, allMarquesProds, allRprodCategories } }) {
   const menuArray = ['Textiles', 'Protection', 'Nutrition', 'RprodMedia'];
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
-  (
+  console.log(allMarquesProds);
+  return (
   <>
   <div class="overflow-hidden">
     <Navigation
@@ -23,10 +24,12 @@ export default function Bike({ data: { allRprodGenerals, allMarquesProds, allRpr
       headerTitle={allRprodGenerals?.nodes?.[0]?.titre}
     />
     <Brands
-      brands={allMarquesProds}
+      brands={allMarquesProds?.nodes}
+      titre={allRprodGenerals?.nodes?.[0]?.titremarque}
     />
     <ProductTypes
-      products={allRprodCategories}
+      products={allRprodCategories?.nodes}
+      titre={allRprodGenerals?.nodes?.[0]?.titrecategorie}
     />
     <Contact/>
     </div>
@@ -38,12 +41,14 @@ export const query = graphql`
     allRprodGenerals: allDatoCmsRprodGeneral {
       nodes {
         titre
+        titrecategorie
+        titremarque
         image {
           url
         }
       }
     },
-    allMarqueProds: allDatoCmsMarqueProd {
+    allMarquesProds: allDatoCmsMarqueProd {
       nodes {
         image {
           url

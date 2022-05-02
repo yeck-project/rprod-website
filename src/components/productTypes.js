@@ -12,15 +12,22 @@ export function Product({image, title, link}) {
   )
 };
 
-export default function Products({ products }) {
+export default function Products({ products, titre }) {
   return (
   <section class="py-20 bg-white overflow-x-hidden">
     <div class="container mx-auto px-4">
-      <h2 class="mb-16 md:mb-24 text-4xl md:text-5xl font-bold font-heading">""</h2>
+      <h2 class="mb-16 md:mb-24 text-4xl md:text-5xl font-bold font-heading">{titre}</h2>
       <div class="flex flex-wrap -mx-3 mb-20">
-
-
-
+      {products?.map((value, key)=>{
+        return (
+          <Product
+          key={key}
+          image={value?.image.url}
+          title={value?.titre}
+          link={""}
+          />
+        )
+      })}
       </div>
     </div>
   </section>

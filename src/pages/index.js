@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../components/container";
 import HomepageContent from "../components/homepageContent";
-import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
 
 export default function Index({ data: {allImageDeFonds, allLogos } }) {

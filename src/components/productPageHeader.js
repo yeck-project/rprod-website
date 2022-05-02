@@ -7,7 +7,6 @@ export default function ProductPageHeader() {
     <img class="absolute top-0 left-0 w-full max-h-32" src="yofte-assets/elements/line-content.svg" alt="" data-removed="true"/>
     <div class="container mx-auto px-4">
       <div class="relative h-96 -mx-6 mb-20">
-        <div class="absolute top-1/2 transform -translate-y-1/2 left-0 right-0 h-80 w-full bg-black"></div>
         <img class="relative w-full h-96 px-6 object-cover" src="https://media.met-helmets.com/app/uploads/2021/11/met-mtb-helmets-range-2022-1.jpg" alt=""/>
       </div>
       <div class="max-w-3xl mx-auto">
