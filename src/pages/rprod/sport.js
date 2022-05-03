@@ -5,10 +5,10 @@ import Photos from "../../components/photoList";
 import Navigation from "../../components/navigationRprod";
 import Contact from "../../components/contact";
 
-export default function Immobilier({ data: { allImmobiliers } }) {
+export default function Sport({ data: { allSports } }) {
   const menuArray = ['immobilier', 'produit', 'sport', 'wedding'];
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
-  const titre = 'Immmobilier'
+  const titre = 'Sport'
   return (
   <>
   <Navigation
@@ -19,7 +19,7 @@ export default function Immobilier({ data: { allImmobiliers } }) {
   titre={titre}
   />
   <Photos
-  photos={allImmobiliers?.nodes}
+  photos={allSports?.nodes}
   titre={titre}
   />
   <Contact/>
@@ -29,7 +29,7 @@ export default function Immobilier({ data: { allImmobiliers } }) {
 
 export const query = graphql`
   {
-    allImmobiliers: allDatoCmsImmobilier {
+    allSports: allDatoCmsSport {
       nodes {
         image {
           url

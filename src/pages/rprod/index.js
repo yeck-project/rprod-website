@@ -3,19 +3,16 @@ import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
 import Header from "../../components/header";
 import Brands from "../../components/brands";
-import ProductTypes from "../../components/productTypes";
-import Navigation from "../../components/navigation";
+import ProductTypes from "../../components/productTypesRprod";
+import Navigation from "../../components/navigationRprod";
 import Contact from "../../components/contact";
 
 export default function Prod({ data: { allRprodGenerals, allMarquesProds, allRprodCategories } }) {
-  const menuArray = ['Textiles', 'Protection', 'Nutrition', 'RprodMedia'];
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
-  console.log(allMarquesProds);
   return (
   <>
   <div class="overflow-hidden">
     <Navigation
-      menuItems={menuArray}
       logo={logo}
     />
     <Header

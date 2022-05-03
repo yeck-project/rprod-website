@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
-export function NavbarMobile ({ menuItems, logo }) {
+export function NavbarMobile ({ logo }) {
+  const menuItems = ['velo', 'textiles', 'pneumatique'];
   const [open, SetOpen] = useState(true);
   
   function toggle() {
@@ -11,7 +11,7 @@ export function NavbarMobile ({ menuItems, logo }) {
     <>
     <div class="relative">
       <div class="bg-white text-black flex justify-between">
-        <a href="/index" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
+        <a href="/rbike" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
         <button onClick={toggle} type="button"
           className={open ?
             'hamburger hamburger--collapse outline-none' : 
@@ -39,17 +39,10 @@ export function NavbarMobile ({ menuItems, logo }) {
           <div class="mt-20 text-black text-center">
             {menuItems.map((menuItem)=>{
             return (
-              <a href={`/${menuItem.toLowerCase()}`} class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">{menuItem}</a>
+              <a href={`/rbike/${menuItem.toLowerCase()}`} class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">{menuItem.charAt(0).toUpperCase() + menuItem.slice(1)}</a>
             )
             })}
-          </div>
-          <div class="flex justify-center mt-10">
-            <a class="mr-3" href="#">
-              <img class="w-10 h-auto" src="https://www.pngmart.com/files/13/Instagram-Logo-PNG-Free-Image.png" alt=""/>
-            </a>
-            <a href="#">
-              <img class="w-10 h-auto" src="https://i.pinimg.com/originals/d2/e5/35/d2e5359f8402cb8d3d7b22c463f9013b.png" alt=""/>
-            </a>
+            <a href="/rbike" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Site Rbike</a>
           </div>
         </nav>
       </div>
@@ -58,8 +51,8 @@ export function NavbarMobile ({ menuItems, logo }) {
   );
 };
 
-export function NavbarDesktop ({ menuItems, logo }) { 
-  
+export function NavbarDesktop ({ logo }) { 
+  const menuItems = ['velo', 'textiles', 'pneumatique'];
   const handleClickContact = () => {
     var elementContact = document.getElementById("contact");
     elementContact.scrollIntoView({ behavior: 'smooth', block: 'start'});
@@ -68,13 +61,14 @@ export function NavbarDesktop ({ menuItems, logo }) {
   return (
     <>
       <nav class="relative px-6 py-2 flex justify-between items-center bg-white">
-        <a href="#" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
+        <a href="/rbike" class="block p-4"><img src={logo} class="h-10 w-auto"/></a>
         <ul class="flex mx-auto flex items-center w-auto space-x-6">
         {menuItems.map((menuItem)=>{
           return (
-            <li><a href={`/${menuItem.toLowerCase()}`} class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">{menuItem}</a></li>
+            <li><a href={`/rbike/${menuItem.toLowerCase()}`} class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">{menuItem.charAt(0).toUpperCase() + menuItem.slice(1)}</a></li>
           )
           })}
+            <li><a href="/rbike" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Site Rbike</a></li>
         </ul>
         <a onClick={handleClickContact} class="text-white bg-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-white hover:border-black hover:text-black">Contact</a>
       </nav>
@@ -82,19 +76,17 @@ export function NavbarDesktop ({ menuItems, logo }) {
   );
 };
 
-export default function Navbar ({ menuItems, logo }) { 
+export default function Navbar ({ logo }) { 
   
   return (
     <>
     <div class="md:hidden">
       <NavbarMobile
-        menuItems={menuItems}
         logo={logo}
       />
     </div>
     <div class="hidden md:block">
       <NavbarDesktop
-        menuItems={menuItems}
         logo={logo}
       />
     </div>
