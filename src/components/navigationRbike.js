@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-export function NavbarMobile ({ logo }) {
-  const menuItems = ['velo', 'textiles', 'pneumatique'];
+export function NavbarMobile () {
+  const menuItems = ['textiles', 'pneumatique'];
+  const logo = "https://res.cloudinary.com/dnspsw5d4/image/upload/v1649503535/rbike/Fichier_3_xrpyrb.png"
   const [open, SetOpen] = useState(true);
   
   function toggle() {
@@ -42,7 +43,7 @@ export function NavbarMobile ({ logo }) {
               <a href={`/rbike/${menuItem.toLowerCase()}`} class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">{menuItem.charAt(0).toUpperCase() + menuItem.slice(1)}</a>
             )
             })}
-            <a href="/rbike" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Site Rbike</a>
+            <a href="/rprod" class="text-black text-xl block py-2.5 px-4 mb-5 rounded transition duration-200 hover:bg-black hover:text-white">Site Rprod</a>
           </div>
         </nav>
       </div>
@@ -51,8 +52,9 @@ export function NavbarMobile ({ logo }) {
   );
 };
 
-export function NavbarDesktop ({ logo }) { 
-  const menuItems = ['velo', 'textiles', 'pneumatique'];
+export function NavbarDesktop () { 
+  const menuItems = ['textiles', 'pneumatique'];
+  const logo = "https://res.cloudinary.com/dnspsw5d4/image/upload/v1649503535/rbike/Fichier_3_xrpyrb.png"
   const handleClickContact = () => {
     var elementContact = document.getElementById("contact");
     elementContact.scrollIntoView({ behavior: 'smooth', block: 'start'});
@@ -68,7 +70,7 @@ export function NavbarDesktop ({ logo }) {
             <li><a href={`/rbike/${menuItem.toLowerCase()}`} class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">{menuItem.charAt(0).toUpperCase() + menuItem.slice(1)}</a></li>
           )
           })}
-            <li><a href="/rbike" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Site Rbike</a></li>
+            <li><a href="/rprod" class="text-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-black hover:text-white">Site Rprod</a></li>
         </ul>
         <a onClick={handleClickContact} class="text-white bg-black text-md py-2.5 px-4 rounded transition duration-200 hover:bg-white hover:border-black hover:text-black">Contact</a>
       </nav>
@@ -76,19 +78,15 @@ export function NavbarDesktop ({ logo }) {
   );
 };
 
-export default function Navbar ({ logo }) { 
+export default function Navbar () { 
   
   return (
     <>
     <div class="md:hidden">
-      <NavbarMobile
-        logo={logo}
-      />
+      <NavbarMobile/>
     </div>
     <div class="hidden md:block">
-      <NavbarDesktop
-        logo={logo}
-      />
+      <NavbarDesktop/>
     </div>
     </>
   );

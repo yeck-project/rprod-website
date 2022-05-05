@@ -12,10 +12,8 @@ export default function Bike({ data: { allRbikeGenerals, allMarquesBikes, allRbi
   return (
   <>
   <div class="overflow-hidden">
-    <Navigation
-      logo={logo}
-    />
-     <Header
+    <Navigation/>
+    <Header
       imageHeader1={allRbikeGenerals?.nodes?.[0]?.image?.url}
       imageHeader2={allRbikeGenerals?.nodes?.[0]?.image?.url}
       headerTitle={allRbikeGenerals?.nodes?.[0]?.titre}

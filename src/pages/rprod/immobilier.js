@@ -6,13 +6,11 @@ import Navigation from "../../components/navigationRprod";
 import Contact from "../../components/contact";
 
 export default function Immobilier({ data: { allImmobiliers } }) {
-  const menuArray = ['immobilier', 'produit', 'sport', 'wedding'];
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
   const titre = 'Immmobilier'
   return (
   <>
   <Navigation
-  menuItems={menuArray}
   logo={logo}
   />
   <ProductPageHeader

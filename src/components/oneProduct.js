@@ -13,9 +13,6 @@ export default function OneProduct({ image, titre, description, lien }) {
     <h4 class="mt-4 text-xl font-bold text-gray-900">{titre}</h4>
     <p class="max-w-sm mt-2 text-gray-700">{description}</p>
     <div class="mt-4 flex flex-wrap">
-      <a href="#" class="mr-4 bg-transparent border border-black text-black hover:bg-black hover:text-white text-center py-2 px-4 rounded">
-        Prendre Contact
-      </a>
       <a href={lien} class="bg-transparent border border-black text-black hover:bg-black hover:text-white text-center py-2 px-4 rounded">
         Découvrir les produits
       </a>
