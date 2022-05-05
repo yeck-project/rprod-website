@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 export function NavbarMobile () {
-  const menuItems = ['textiles', 'pneumatique'];
+  const menuItems = ['textile', 'pneumatique'];
   const logo = "https://res.cloudinary.com/dnspsw5d4/image/upload/v1649503535/rbike/Fichier_3_xrpyrb.png"
   const [open, SetOpen] = useState(true);
   
@@ -53,7 +53,7 @@ export function NavbarMobile () {
 };
 
 export function NavbarDesktop () { 
-  const menuItems = ['textiles', 'pneumatique'];
+  const menuItems = ['textile', 'pneumatique'];
   const logo = "https://res.cloudinary.com/dnspsw5d4/image/upload/v1649503535/rbike/Fichier_3_xrpyrb.png"
   const handleClickContact = () => {
     var elementContact = document.getElementById("contact");
