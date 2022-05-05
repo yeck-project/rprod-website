@@ -16,8 +16,8 @@ export default function Prod({ data: { allRprodGenerals, allMarquesProds, allRpr
       logo={logo}
     />
     <Header
-      imageHeader1={allRprodGenerals?.nodes?.[0]?.image?.url}
-      imageHeader2={allRprodGenerals?.nodes?.[0]?.image?.url}
+      imageHeader1={"https://res.cloudinary.com/dnspsw5d4/image/upload/v1649523301/r%20prod/immobilier/DSCF0344_yc2cnt.jpg"}
+      imageHeader2={"https://res.cloudinary.com/dnspsw5d4/image/upload/v1649613021/r%20prod/people/DSCF0942-3_zobay1.jpg"}
       headerTitle={allRprodGenerals?.nodes?.[0]?.titre}
     />
     <Brands

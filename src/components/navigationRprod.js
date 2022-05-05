@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-export function NavbarMobile ({ logo }) {
+export function NavbarMobile () {
   const menuItems = ['immobilier', 'produit', 'sport', 'wedding'];
+  const logo = "https://res.cloudinary.com/dnspsw5d4/image/upload/v1649503516/r%20prod/Fichier_2_dtreqd.png"
   const [open, SetOpen] = useState(true);
   
   function toggle() {
@@ -51,8 +52,10 @@ export function NavbarMobile ({ logo }) {
   );
 };
 
-export function NavbarDesktop ({ logo }) { 
+export function NavbarDesktop () { 
   const menuItems = ['immobilier', 'produit', 'sport', 'wedding'];
+  const logo = "https://res.cloudinary.com/dnspsw5d4/image/upload/v1649503516/r%20prod/Fichier_2_dtreqd.png"
+
   const handleClickContact = () => {
     var elementContact = document.getElementById("contact");
     elementContact.scrollIntoView({ behavior: 'smooth', block: 'start'});
@@ -76,19 +79,15 @@ export function NavbarDesktop ({ logo }) {
   );
 };
 
-export default function Navbar ({ logo }) { 
+export default function Navbar () { 
   
   return (
     <>
     <div class="md:hidden">
-      <NavbarMobile
-        logo={logo}
-      />
+      <NavbarMobile/>
     </div>
     <div class="hidden md:block">
-      <NavbarDesktop
-        logo={logo}
-      />
+      <NavbarDesktop/>
     </div>
     </>
   );

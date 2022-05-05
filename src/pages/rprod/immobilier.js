@@ -7,7 +7,8 @@ import Contact from "../../components/contact";
 
 export default function Immobilier({ data: { allImmobiliers } }) {
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
-  const titre = 'Immmobilier'
+  const titre = 'Immmobilier';
+  const image = 'https://res.cloudinary.com/dnspsw5d4/image/upload/v1649523318/r%20prod/immobilier/DSCF4867_wbpbsn.jpg'
   return (
   <>
   <Navigation
@@ -15,6 +16,7 @@ export default function Immobilier({ data: { allImmobiliers } }) {
   />
   <ProductPageHeader
   titre={titre}
+  image={image}
   />
   <Photos
   photos={allImmobiliers?.nodes}

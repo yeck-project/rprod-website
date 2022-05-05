@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Contact() {
-  
+
   return (
     <section id="contact">
     <div class="py-20 bg-gray-50">
@@ -12,30 +12,20 @@ export default function Contact() {
         <div class="flex flex-wrap -mx-4">
           <div class="mb-8 lg:mb-0 w-full lg:w-1/3 px-4">
             <div class="py-12 lg:py-20 rounded bg-white shadow text-center">
-              <h3 class="mb-8 lg:mb-20 text-3xl font-bold font-heading">Office</h3>
-              <p class="text-gray-400">359 Hidden</p>
-              <p class="text-gray-400">Valley Road, NY</p>
-            </div>
-          </div>
-          <div class="mb-8 lg:mb-0 w-full lg:w-1/3 px-4">
-            <div class="py-12 lg:py-20 rounded bg-white shadow text-center">
               <h3 class="mb-8 lg:mb-20 text-3xl font-bold font-heading">Contacts</h3>
-              <p class="text-gray-400">hello@gmail.com</p>
-              <p class="text-gray-400">+48 698 033 101</p>
+              <p class="text-gray-400">remi.cordier@msn.com</p>
+              <p class="text-gray-400">+33 58 265 813</p>
             </div>
           </div>
           <div class="w-full lg:w-1/3 px-4 flex items-stretch">
             <div class="py-12 lg:py-20 w-full rounded bg-white shadow text-center">
-              <h3 class="mb-8 lg:mb-20 text-3xl font-bold font-heading">Socials</h3>
+              <h3 class="mb-8 lg:mb-20 text-3xl font-bold font-heading">Réseaux Sociaux</h3>
               <div class="flex justify-center">
-                <a class="mr-3" href="#">
-                  <img class="w-8 h-8" src="atis-assets/social/facebook.svg" alt=""/>
+                <a class="mr-3" href="https://www.facebook.com/R-Prod-Outdoor-Vid%C3%A9o-photo-919985554817049">
+                  <img class="w-8 h-8" src="https://res.cloudinary.com/dnspsw5d4/image/upload/v1651780685/logo/Facebook_f_logo__2019_.svg_gcg17z.png" alt=""/>
                 </a>
-                <a class="mr-3" href="#">
-                  <img class="w-8 h-8" src="atis-assets/social/twitter.svg" alt=""/>
-                </a>
-                <a href="#">
-                  <img class="w-8 h-8" src="atis-assets/social/instagram.svg" alt=""/>
+                <a href="https://www.instagram.com/rprodoutdoor/">
+                  <img class="w-8 h-8" src="https://res.cloudinary.com/dnspsw5d4/image/upload/v1651780693/logo/t%C3%A9l%C3%A9chargement_awzuhf.jpg" alt=""/>
                 </a>
               </div>
             </div>

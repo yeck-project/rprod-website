@@ -7,12 +7,14 @@ import Navigation from "../../components/navigationRbike";
 
 export default function Textiles({ data: { allTextiles } }) {
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
-  const titre = 'Produits Textiles'
+  const titre = 'Produits Textiles';
+  const image = 'https://s3.amazonaws.com/www.bikerumor.com/wp-content/uploads/2022/02/04092753/Pactimo-Feature-Image.jpg'
   return (
   <>
   <Navigation/>
   <ProductPageHeader
   titre={titre}
+  image={image}
   />
   <div class="relative container px-4 mx-auto">
     <div class="max-w-md">

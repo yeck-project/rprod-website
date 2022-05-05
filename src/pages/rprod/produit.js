@@ -6,17 +6,15 @@ import Navigation from "../../components/navigationRprod";
 import Contact from "../../components/contact";
 
 export default function Produit({ data: { allProduits } }) {
-  const menuArray = ['immobilier', 'produit', 'sport', 'wedding'];
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
-  const titre = 'Produits'
+  const titre = 'Produits';
+  const image = 'https://res.cloudinary.com/dnspsw5d4/image/upload/v1649618572/r%20prod/produit/DSCF0294_cmytfl.jpg'
   return (
   <>
-  <Navigation
-  menuItems={menuArray}
-  logo={logo}
-  />
+  <Navigation/>
   <ProductPageHeader
   titre={titre}
+  image={image}
   />
   <Photos
   photos={allProduits?.nodes}

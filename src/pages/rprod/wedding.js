@@ -8,7 +8,8 @@ import Contact from "../../components/contact";
 export default function Immobilier({ data: { allWeddings } }) {
   const menuArray = ['immobilier', 'produit', 'sport', 'wedding'];
   const logo = 'https://res.cloudinary.com/yet/image/upload/v1642532967/Fichier_3_pxxic0.png';
-  const titre = 'Wedding'
+  const titre = 'Wedding';
+  const image = 'https://res.cloudinary.com/dnspsw5d4/image/upload/v1649522803/r%20prod/wedding/DSCF1194_fqewd0.jpg'
   return (
   <>
   <Navigation
@@ -17,6 +18,7 @@ export default function Immobilier({ data: { allWeddings } }) {
   />
   <ProductPageHeader
   titre={titre}
+  image={image}
   />
   <Photos
   photos={allWeddings?.nodes}
